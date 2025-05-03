@@ -196,11 +196,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&trans     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp HOME       &kp END          &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans     &trans        &trans        &trans        &trans        &trans        &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans     &trans        &trans        &trans        &trans        &kp CAPS      &trans         &kp DELETE       &trans           &kp KP_NUMBER_0  &dot_comma       &kp KP_ENTER
-                         &trans        &trans        &trans        &trans        &trans         &trans           &trans           &trans
+&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp PAGE_UP         &kp PAGE_DOWN  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
+&trans     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp HOME            &kp END        &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans     &trans        &trans        &trans        &trans        &trans        &kp K_CONTEXT_MENU  &kp KP_MINUS   &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&trans     &trans        &trans        &trans        &trans        &kp CAPS      &trans              &kp DELETE     &trans           &kp KP_NUMBER_0  &dot_comma       &kp KP_ENTER
+                         &trans        &trans        &trans        &trans        &trans              &trans         &trans           &trans
             >;
         };
 
@@ -210,7 +210,7 @@
 &trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp PAGE_UP    &kp RC(RS(TAB))  &kp UP_ARROW  &kp LC(TAB)    &kp HOME  &trans
 &trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp PAGE_DOWN  &kp LEFT         &kp DOWN      &kp RIGHT      &kp END   &trans
 &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans         &kp RA(LEFT)     &trans        &kp RA(RIGHT)  &trans    &trans
-&trans  &trans   &trans   &trans   &trans   &trans   &trans         &trans           &trans        &trans         &trans    &trans
+&trans  &trans   &trans   &trans   &trans   &trans   &kp ESC        &trans           &trans        &trans         &trans    &trans
                  &trans   &trans   &trans   &trans   &trans         &trans           &trans        &trans
             >;
         };
