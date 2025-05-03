@@ -183,10 +183,10 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp W         &kp E            &kp R                &kp T                     &kp Y                   &kp U          &lt 5 I          &kp O       &kp P           &mt EQUAL MINUS
-&kp TAB    &kp A         &kp S         &kp D            &kp F                &kp G                     &kp H                   &kp J          &kp K            &kp L       &mt2 SEMI LBKT  &mt2 SQT RBKT
-&kp LSHFT  &kp Z         &kp X         &kp C            &kp V                &kp B                     &kp N                   &kp M          &kp COMMA        &kp PERIOD  &mt2 UP SLASH   &mt RIGHT_SHIFT BSLH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE        &mo SECONDARY_LAYER  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp BACKSPACE  &kp RET          &kp LEFT    &kp DOWN        &mt RCTRL RIGHT
+&kp ESC    &kp Q         &kp W         &kp E            &kp R                &kp T                     &kp Y                   &kp U          &kp I            &kp O               &kp P                &mt EQUAL MINUS
+&kp TAB    &kp A         &kp S         &kp D            &kp F                &kp G                     &kp H                   &kp J          &kp K            &kp L               &mt2 SEMI LBKT       &mt2 SQT RBKT
+&kp LSHFT  &kp Z         &kp X         &kp C            &kp V                &kp B                     &kp N                   &kp M          &kp COMMA        &kp PERIOD          &mt2 SLASH UP_ARROW  &mt RIGHT_SHIFT BSLH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE        &mo SECONDARY_LAYER  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp BACKSPACE  &lt 2 ENTER      &mt RIGHT_ALT LEFT  &kp DOWN             &mt RCTRL RIGHT
                          &allow_end    &allow_pagedown  &allow_home          &allow_pageup             &allow_pageup           &allow_home    &allow_pagedown  &allow_end
             >;
         };
@@ -207,11 +207,11 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp PAGE_UP    &kp RC(RS(TAB))  &kp UP_ARROW  &kp LC(TAB)    &kp HOME  &trans
+&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp PAGE_DOWN  &kp LEFT         &kp DOWN      &kp RIGHT      &kp END   &trans
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans         &kp RA(LEFT)     &trans        &kp RA(RIGHT)  &trans    &trans
+&trans  &trans   &trans   &trans   &trans   &trans   &trans         &trans           &trans        &trans         &trans    &trans
+                 &trans   &trans   &trans   &trans   &trans         &trans           &trans        &trans
             >;
         };
 
