@@ -23,7 +23,7 @@
 &glidepoint_listener_R {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_xy_scaler 3 2>,
+        <&zip_xy_scaler 2 1>,
         <&zip_temp_layer MOUSE_R_LAYER 500>;
 
     lowspeedmode {
@@ -46,15 +46,15 @@
 &glidepoint_listener_L {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_xy_scaler 3 2>,
-        <&zip_temp_layer MOUSE_L_LAYER 500>;
+        <&zip_xy_scaler 2 1>;//,
+        //<&zip_temp_layer MOUSE_L_LAYER 500>;
 
     lowspeedmode {
         layers = <SECONDARY_LAYER>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_xy_scaler 3 4>,
-            <&zip_temp_layer MOUSE_L_LAYER 500>;
+            <&zip_xy_scaler 3 5>;//,
+            //<&zip_temp_layer MOUSE_L_LAYER 500>;
     };
 
     scroller {
@@ -183,11 +183,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp W         &kp E            &kp R                &kp T                            &kp Y                             &kp U            &kp I            &kp O               &kp P                &mt EQUAL MINUS
-&kp TAB    &kp A         &kp S         &kp D            &kp F                &kp G                            &kp H                             &kp J            &kp K            &kp L               &mt2 SEMI LBKT       &mt2 SQT RBKT
-&kp LSHFT  &kp Z         &kp X         &kp C            &kp V                &kp B                            &kp N                             &kp M            &kp COMMA        &kp PERIOD          &mt2 SLASH UP_ARROW  &mt RIGHT_SHIFT BSLH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE        &mo SECONDARY_LAYER  &lt TERTIARY_LAYER INT_MUHENKAN  &lt SYSTEM_LAYER INTERNATIONAL_4  &lt 1 BACKSPACE  &lt 2 ENTER      &mt RIGHT_ALT LEFT  &kp DOWN             &mt RCTRL RIGHT
-                         &allow_end    &allow_pagedown  &allow_home          &allow_pageup                    &allow_pageup                     &allow_home      &allow_pagedown  &allow_end
+&kp ESC    &kp Q         &kp W         &kp E            &kp R                &kp T                            &kp Y                        &kp U            &kp I            &kp O               &kp P                &mt EQUAL MINUS
+&kp TAB    &kp A         &kp S         &kp D            &kp F                &kp G                            &kp H                        &kp J            &kp K            &kp L               &mt2 SEMI LBKT       &mt2 SQT RBKT
+&kp LSHFT  &kp Z         &kp X         &kp C            &kp V                &kp B                            &kp N                        &kp M            &kp COMMA        &kp PERIOD          &mt2 SLASH UP_ARROW  &mt RIGHT_SHIFT BSLH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE        &mo SECONDARY_LAYER  &lt TERTIARY_LAYER INT_MUHENKAN  &lt SYSTEM_LAYER INT_HENKAN  &lt 1 BACKSPACE  &lt 2 ENTER      &mt RIGHT_ALT LEFT  &kp DOWN             &mt RCTRL RIGHT
+                         &allow_end    &allow_pagedown  &allow_home          &allow_pageup                    &allow_pageup                &allow_home      &allow_pagedown  &allow_end
             >;
         };
 
