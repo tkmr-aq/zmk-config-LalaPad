@@ -47,7 +47,8 @@
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_xy_scaler 2 1>;
-//,
+
+    //,
     //<&zip_temp_layer MOUSE_L_LAYER 500>;
 
     lowspeedmode {
@@ -55,7 +56,8 @@
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 3 5>;
-//,
+
+        //,
         //<&zip_temp_layer MOUSE_L_LAYER 500>;
     };
 
@@ -211,7 +213,7 @@
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp PAGE_UP    &kp RC(RS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &kp HOME  &trans
 &trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp PAGE_DOWN  &kp LEFT         &kp DOWN      &kp RIGHT    &kp END   &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans         &mkp MB4         &trans        &mkp MB5     &trans    &trans
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &mkp LCLK      &mkp RCLK        &mkp MB4      &mkp MB5     &trans    &trans
 &trans  &trans   &trans   &trans   &trans   &trans   &kp ESC        &trans           &trans        &trans       &trans    &trans
                  &trans   &trans   &trans   &trans   &trans         &trans           &trans        &trans
             >;
@@ -233,11 +235,11 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL_R_LAYER
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo SCROLL_R_LAYER
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
