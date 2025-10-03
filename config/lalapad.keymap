@@ -198,6 +198,26 @@
             bindings = <&kp KP_NUMLOCK>;
             key-positions = <41 42>;
         };
+
+        Exclamation_Mark {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 41>;
+        };
+
+        At_Sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <2 17>;
+        };
+
+        Left_Parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <16 41>;
+        };
+
+        Right_Parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <41 17>;
+        };
     };
 
     keymap {
