@@ -203,6 +203,16 @@
             bindings = <&kp KP_NUMLOCK>;
             key-positions = <41 42>;
         };
+
+        qwe_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2 3>;
+        };
+
+        sdf_tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 14 16>;
+        };
     };
 
     keymap {
